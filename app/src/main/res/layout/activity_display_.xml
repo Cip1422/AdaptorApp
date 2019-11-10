@@ -18,55 +18,33 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <EditText
-        android:id="@+id/name_edittext"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="name"
-        android:inputType="textPersonName"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        android:textColor="#CC0BEC"/>
 
-    <EditText
-        android:id="@+id/room_number_edit_text"
-        android:textColor="#CC0BEC"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="room number"
-        android:inputType="number"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name_edittext" />
 
-    <EditText
-        android:textColor="#CC0BEC"
-        android:id="@+id/price_edit_text"
+    <ListView
+        android:id="@+id/hotel_list_view"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:hint="price"
-        android:inputType="number"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toTopOf="@id/checkback_in_button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/room_number_edit_text" />
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintVertical_bias="0.375">
 
+    </ListView>
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/pic_dim"
         android:src="@drawable/hotel"
-        app:layout_constraintBottom_toTopOf="@id/name_edittext"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginBottom="10dp"/>
 
     <Button
-        android:id="@+id/check_in_button"
+        android:id="@+id/checkback_in_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Check In"
